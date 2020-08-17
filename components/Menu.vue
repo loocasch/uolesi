@@ -22,28 +22,28 @@
 
         <b-collapse id="collapsibleNavId" class="navbar-collapse">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
-            <li class="nav-item">
+            <li class="nav-item" @click="closeMenu">
               <a
                 class="nav-link scrollactive-item text-uppercase font-size-18"
                 href="#menu"
                 >Menu</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item" @click="closeMenu">
               <a
                 class="nav-link scrollactive-item text-uppercase font-size-18"
                 href="#rental"
                 >Wypożyczalnia</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item" @click="closeMenu">
               <a
                 class="nav-link scrollactive-item text-uppercase font-size-18"
                 href="#gallery"
                 >Galeria</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item" @click="closeMenu">
               <a
                 class="nav-link scrollactive-item text-uppercase font-size-18"
                 href="#contact"
@@ -57,5 +57,14 @@
   </div>
 </template>
 <script>
-export default {}
+export default {
+  methods: {
+    closeMenu() {
+      const mq = window.matchMedia('(max-width: 767px)')
+      if (mq.matches) {
+        this.$root.$emit('bv::toggle::collapse', 'collapsibleNavId')
+      }
+    },
+  },
+}
 </script>
