@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid wrapper-box">
     <scrollactive :modify-url="false" :scroll-offset="120" :offset="120">
-      <div class="navbar navbar-expand-sm navbar-light bg-light wrapper-box">
+      <div class="navbar navbar-expand-lg navbar-light bg-light wrapper-box">
         <a
           class="navbar-brand font-lora font-size-35 font-weight-bold scrollactive-item"
           href="#carousel-fade"
@@ -46,6 +46,13 @@
             <li class="nav-item" @click="closeMenu">
               <a
                 class="nav-link scrollactive-item text-uppercase font-size-18"
+                href="#partners"
+                >Partnerzy</a
+              >
+            </li>
+            <li class="nav-item" @click="closeMenu">
+              <a
+                class="nav-link scrollactive-item text-uppercase font-size-18"
                 href="#contact"
                 >Kontakt</a
               >
@@ -60,7 +67,7 @@
 export default {
   methods: {
     closeMenu() {
-      const mq = window.matchMedia('(max-width: 767px)')
+      const mq = window.matchMedia('(max-width: 991px)')
       if (mq.matches) {
         this.$root.$emit('bv::toggle::collapse', 'collapsibleNavId')
       }

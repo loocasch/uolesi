@@ -13,7 +13,11 @@
     ></b-carousel-slide>
     <b-carousel-slide
       caption=""
-      img-src="~assets/images/image5.jpg"
+      img-src="~assets/images/image1.jpg"
+    ></b-carousel-slide>
+    <b-carousel-slide
+      caption=""
+      img-src="~assets/images/image4.jpg"
     ></b-carousel-slide>
   </b-carousel>
 </template>
