@@ -7,18 +7,18 @@
         chłodzące.
       </div>
 
-      <div class="row mt-5 justify-content-center">
-        <div class="col-md">
+      <div class="row mt-5 justify-content-center card-box">
+        <div class="col-md-3">
           <div class="card p-3 mb-md-0 mb-3">
             <img class="card-img-top" src="~assets/images/ham.jpg" alt="" />
           </div>
         </div>
-        <div class="col-md">
+        <div class="col-md-3">
           <div class="card p-3 mb-md-0 mb-3">
             <img class="card-img-top" src="~assets/images/obiad.jpg" alt="" />
           </div>
         </div>
-        <div class="col-md">
+        <div class="col-md-3">
           <div class="card p-3 mb-md-0 mb-3">
             <img
               class="card-img-top"
@@ -39,33 +39,36 @@
           dzień w atrakcyjnych cenach. <br />
           Do dyspozycji mamy kajaki oraz rowery wodne. Posiadamy również rowery
           turystyczne.<br />
-          Organizujemy spływy kajakowe.
+          Organizujemy spływy kajakowe. <br />Mamy do zaoferowania nocleg w
+          Ostaszewskiej chacie - 300 zł/doba.<br />
+          Telefon kontaktowy:
+          <a href="tel:+48501398022" class="text-default">501398022</a>.
         </p>
 
-        <div class="row mt-5 justify-content-center">
-          <div class="col-md">
+        <div class="row mt-5 justify-content-center card-box">
+          <div class="col-md-3">
             <div class="card p-3 mb-md-0 mb-3">
               <img
                 class="card-img-top"
-                src="~assets/images/image7.jpeg"
+                src="~assets/images/image7.jpg"
                 alt=""
               />
             </div>
           </div>
-          <div class="col-md">
+          <div class="col-md-3">
             <div class="card p-3 mb-md-0 mb-3">
               <img
                 class="card-img-top"
-                src="~assets/images/image3.jpeg"
+                src="~assets/images/image3.jpg"
                 alt=""
               />
             </div>
           </div>
-          <div class="col-md">
+          <div class="col-md-3">
             <div class="card p-3 mb-md-0 mb-3">
               <img
                 class="card-img-top"
-                src="~assets/images/image6.jpeg"
+                src="~assets/images/image6.jpg"
                 alt=""
               />
             </div>
@@ -75,6 +78,29 @@
     </div>
     <div id="gallery" class="item-box">
       <h2 class="text-center font-lora font-weight-bold mb-5">Galeria</h2>
+      <Gallery />
+    </div>
+    <div id="partners" class="item-box">
+      <h2 class="text-center font-lora font-weight-bold mb-5">Partnerzy</h2>
+      <div class="row mt-5 justify-content-center card-box">
+        <div class="col-md-3">
+          <a
+            href="http://pawieoczko.eu/"
+            class="card p-3 mb-md-0 mb-3 text-default"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="card-img-top"
+              src="~assets/images/logo-www-sm.svg"
+              alt=""
+            />
+            <div class="text-center font-size-25 mt-4">
+              Pawie Oczko
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
     <div id="contact" class="item-box">
       <h2 class="text-center font-lora font-weight-bold mb-5">Kontakt</h2>
@@ -117,3 +143,11 @@
     </div>
   </div>
 </template>
+<script>
+import Gallery from '~/components/Gallery'
+export default {
+  components: {
+    Gallery,
+  },
+}
+</script>
